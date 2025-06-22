@@ -6,7 +6,7 @@ let model, classNames;
 async function loadModel() {
     try {
         model = await tf.loadLayersModel(MODEL_URL);
-        console.log("✅ Model loaded successfully.");
+        console.log(" Model loaded successfully.");
 
         classNames = ['french bulldog','shetland sheepdog',
                     'otterhound','english foxhound',
@@ -25,10 +25,10 @@ async function loadModel() {
             'turkish angora','abyssinian','american bobtail'];
         document.querySelector('label').style.opacity = '1';
 
-        console.log("📄 Model Summary:");
+        console.log(" Model Summary:");
         model.summary();
 
-        console.log("🔍 Detailed Layer Information:");
+        console.log(" Detailed Layer Information:");
         
         model.layers.forEach((layer, idx) => {
             console.log(`Layer ${idx}: ${layer.name}`, {
@@ -39,9 +39,9 @@ async function loadModel() {
                 Config: layer.getConfig()
             });
 
-            // 👉 If the layer is a Sequential, expand its sublayers
+            //  If the layer is a Sequential, expand its sublayers
             if (layer.getClassName() === "Sequential" && layer.layers) {
-                console.log(`🔽 Sub-layers inside ${layer.name}:`);
+                console.log(` Sub-layers inside ${layer.name}:`);
                 layer.layers.forEach((sublayer, subidx) => {
                     console.log(`   Sub-layer ${subidx}: ${sublayer.name}`, {
                         Type: sublayer.getClassName(),
@@ -55,7 +55,7 @@ async function loadModel() {
         });
 
     } catch (error) {
-        console.error("❌ Model loading error:", error);
+        console.error("Model loading error:", error);
         alert("Model failed to load. Check console for details.");
     }
 }
