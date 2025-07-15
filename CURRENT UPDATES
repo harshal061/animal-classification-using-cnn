@@ -1,0 +1,57 @@
+1.currently upgrading the project from the existing non-code mechnism to the coded evaluation for test data.
+2.the colab platform is used for the further updation of the project, the evaluation of test data tells that at this moment the models performance is not good the pzrameters like accuracy, precicsion
+recall etc are very bad, so its now should be improved.
+3. current performance:
+Classification Report:
+                       precision    recall  f1-score   support
+
+           Abyssinian       0.00      0.00      0.00        10
+     American Bobtail       0.00      0.00      0.00        10
+        American Curl       0.33      0.10      0.15        10
+   American Shorthair       0.00      0.00      0.00        10
+               Bengal       0.00      0.00      0.00        10
+               Birman       0.00      0.00      0.00        10
+               Bombay       0.00      0.00      0.00        10
+    British Shorthair       0.00      0.00      0.00        10
+         Egyptian Mau       0.00      0.00      0.00        10
+     Exotic Shorthair       0.00      0.00      0.00        10
+           Maine Coon       0.00      0.00      0.00        10
+                 Manx       0.00      0.00      0.00        10
+     Norwegian Forest       0.02      0.10      0.03        10
+              Persian       0.00      0.00      0.00        10
+              Ragdoll       0.00      0.00      0.00        10
+         Russian Blue       0.00      0.00      0.00        10
+        Scottish Fold       0.00      0.00      0.00        10
+              Siamese       0.00      0.00      0.00        10
+               Sphynx       0.00      0.00      0.00        10
+       Turkish Angora       0.00      0.00      0.00        10
+        AFEENPINSCHER       0.00      0.00      0.00         5
+ AFFRICAN HUNTING DOG       0.00      0.00      0.00         5
+               BEAGLE       0.00      0.00      0.00         5
+                BOXER       0.00      0.00      0.00         5
+CURLY COATED RETRIVER       0.00      0.00      0.00         5
+                DHOLE       0.00      0.00      0.00         5
+             DOBERMAN       0.50      0.20      0.29         5
+     ENGLISH FOXHOUND       0.00      0.00      0.00         5
+ FLAT COATED RETRIVER       0.00      0.00      0.00         5
+       FRENCH BULLDOG       0.00      0.00      0.00         5
+      GERMAN SHEPHARD       0.00      0.00      0.00         5
+      GOLDEN RETRIVER       0.00      0.00      0.00         5
+            GREATDANE       0.00      0.00      0.00         5
+      JAPNESE SPANIAL       0.00      0.00      0.00         5
+    LABRADOR RETRIVER       0.02      0.20      0.03         5
+              MALTESE       0.00      0.00      0.00         5
+        NEW FOUNDLAND       0.00      0.00      0.00         5
+           OTTERHOUND       0.02      0.80      0.05         5
+                  PUG       0.00      0.00      0.00         5
+           ROTTWEILER       0.00      0.00      0.00         5
+        SAINT BERNARD       0.00      0.00      0.00         5
+               SAMYOD       0.00      0.00      0.00         5
+    SHETLAND SHEEPDOG       0.00      0.00      0.00         5
+      SIEBERIAN HUSKY       0.00      0.00      0.00         5
+    TIEBETIAN MASTIFF       0.00      0.00      0.00         5
+
+             accuracy                           0.02       325
+            macro avg       0.02      0.03      0.01       325
+         weighted avg       0.02      0.02      0.01       325
+
